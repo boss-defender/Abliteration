@@ -74,6 +74,34 @@ You never need to leave your computer running all night. Whenever you're ready t
 
 The script automatically mounts your Google Drive, detects your saved checkpoint, skips all finished trials, and instantly picks up right where you left off! 🔄💾
 
+
+## 🔄 Resuming Progress After GPU Timeout (Free Tier)
+
+Ran out of free Colab GPU hours mid-run? Don't panic! All trial progress is auto-saved directly to Google Drive. Here is how to keep cooking without losing a single step:
+
+
+### ⏳ Option A: Resume on the Same Account (After Quota Reset)
+1. Open the notebook after your GPU access resets (usually 24 hours).
+2. Connect to a GPU runtime and hit **Run** on Cell 1.
+3. The engine automatically detects your `heretic_checkpoints` folder on Google Drive and picks up right where it got cut off! 🚀
+
+### ⚡ Option B: Switch to a 2nd Google Account (Immediate Resume)
+Don't want to wait 24 hours? Jump to another Gmail account and keep going immediately:
+
+1. **Share the Checkpoints Folder** 📤
+   * Open Google Drive on **Account #1**.
+   * Right-click the `heretic_checkpoints` folder ➔ **Share** ➔ Add **Account #2's Gmail** (set permission to **Editor**).
+
+2. **Add Folder or Create Shortcut in Account #2's Drive** 🔗
+   * Open Google Drive on **Account #2** and go to **Shared with me** on the left menu.
+   * Right-click the `heretic_checkpoints` folder and select **Add shortcut** (or **Organize** ➔ **Add shortcut**). Alternatively, you can drag and move the folder directly into **My Drive**.
+   * Pick **My Drive** as the location so Colab maps it cleanly to `/content/drive/MyDrive/heretic_checkpoints`.
+
+3. **Run the Notebook on Account #2** 🚀
+   * Open the Colab notebook signed in as **Account #2**.
+   * Set runtime to **GPU** and run **Cell 1**.
+   * `heretic` will read the shared checkpoint folder and seamlessly continue from the last saved trial! 🎉
+  
 ---
 
 ## ✨ Key Features
