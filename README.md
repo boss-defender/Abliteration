@@ -1,4 +1,7 @@
 # Abliteration
+
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/boss-defender/Abliteration/blob/main/Decensor_Ai_Model_heretic.ipynb)
+
 Created using Colab and Heretic tool for AI model abliterating.  
 
 # 🗡️ Heretic Colab Decensor: Uncensor LLMs in 1 Click 🔥
@@ -24,7 +27,6 @@ Older tools used brute force to chop these out, which often caused severe AI bra
 ## 🚀 How to Use (Step-by-Step)
 
 ### 1️⃣ Open in Colab
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/boss-defender/Abliteration/blob/main/Decensor_Ai_Model_heretic.ipynb)
 
 Click here to **[Open in Colab](https://colab.research.google.com/github/boss-defender/Abliteration/blob/main/Decensor_Ai_Model_heretic.ipynb)** or upload the `Decensor_Ai_Model_heretic.ipynb` notebook to Google Colab.
 
