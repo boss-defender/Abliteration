@@ -24,7 +24,9 @@ Older tools used brute force to chop these out, which often caused severe AI bra
 ## 🚀 How to Use (Step-by-Step)
 
 ### 1️⃣ Open in Colab
-Click the **Open in Colab** badge at the top of this repo or upload the `.ipynb` notebook to Google Colab.
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/boss-defender/Abliteration/blob/main/Decensor_Ai_Model_heretic.ipynb)
+
+Click here to **[Open in Colab](https://colab.research.google.com/github/boss-defender/Abliteration/blob/main/Decensor_Ai_Model_heretic.ipynb)** or upload the `Decensor_Ai_Model_heretic.ipynb` notebook to Google Colab.
 
 ### 2️⃣ Turn on the GPU
 Go to **Runtime** ➡️ **Change runtime type** ➡️ Select **T4 GPU** ➡️ Click **Save**.
