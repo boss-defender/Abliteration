@@ -49,7 +49,7 @@ Click **Play (▶️)** on Cell 3. It smart-scans your workspace, finds your new
 ### 6️⃣ Run Step 4: Download Model
 Click **Play (▶️)** on Cell 4. This triggers an automatic browser download straight to your computer! 📦⬇️
 
-### Yes, it will take a long time to finish. Don't worry, take a movie break.
+### Yes, it will take a long time to finish. Don't worry, keep that tab open. And take a movie break.
 
 ---
 
