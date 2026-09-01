@@ -36,7 +36,7 @@ You can simply click **Runtime ➡️ Run all** (`Ctrl + F9` / `Cmd + F9`) to ru
 
 ### 3️⃣ Step 1: Configure , Install Engine & Decensor
 
-Fill in the form fields on Cell 1 and click **Play (▶️)**
+Fill in the form fields on Cell 1 and click **Play (▶️)**.
 This checks your GPU availability and installs `heretic-llm` and its required tools and starts decensoring. 
 
 * **`MODEL_NAME`**: Paste any Hugging Face model path (e.g., `Qwen/Qwen2.5-7B-Instruct`).
