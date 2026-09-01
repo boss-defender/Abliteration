@@ -1,2 +1,64 @@
 # Abliteration
 Created using Colab and Heretic tool for AI model abliterating.  
+
+# 🗡️ Heretic Colab Decensor: Uncensor LLMs in 1 Click 🔥
+
+Transform restricted, refusal-heavy AI models into completely open, unfiltered powerhouses right inside Google Colab — no expensive local hardware required! 🚀
+
+This repository provides a simple, zero-setup **Google Colab Interface** powered by [**Heretic**](https://github.com/p-e-w/heretic). Just paste your favorite Hugging Face model name, hit play, and walk away with your freshly uncensored model zipped up and ready to download!
+
+---
+
+## 🧠 What Is This & How Does It Work?
+
+When AI models refuse to answer questions, it's because safety alignment places specific "refusal directions" inside their mathematical layers. 
+
+Older tools used brute force to chop these out, which often caused severe AI brain damage 🥴. **Heretic** acts like a precision surgeon:
+
+* 🎯 **Refusal Direction Tracking:** It scans the model's internal residual streams to pinpoint exactly where the refusal logic lives.
+* ⚖️ **Smart Optimization:** It automatically calculates optimal ablation weights using Optuna, keeping your model sharp while removing the guardrails (minimizing KL-divergence).
+* ⚡ **Low-VRAM Magic:** Runs in `BNB_4BIT` mode so you can process 7B to 12B parameter models on a **Free Google Colab T4 GPU** without crashing memory!
+
+---
+
+## 🚀 How to Use (Step-by-Step)
+
+### 1️⃣ Open in Colab
+Click the **Open in Colab** badge at the top of this repo or upload the `.ipynb` notebook to Google Colab.
+
+### 2️⃣ Turn on the GPU
+Go to **Runtime** ➡️ **Change runtime type** ➡️ Select **T4 GPU** ➡️ Click **Save**.
+
+### ⚡PRO TIP / RUN-ALL NOTE:
+You can simply click **Runtime ➡️ Run all** (`Ctrl + F9` / `Cmd + F9`) to run the whole pipeline automatically! Just make sure you set your correct **Hugging Face Model Path** (`MODEL_NAME e.g., Qwen/Qwen2.5-7B-Instruct`), **Quantization** (`BNB_4BIT`), and **Access Token** (if using a gated model) in Cell 2 **BEFORE** hitting Run All! 🎯
+
+### 3️⃣ Run Step 1: Install Engine
+Click **Play (▶️)** on Cell 1. This checks your GPU availability and installs `heretic-llm` and its required tools.
+
+### 4️⃣ Run Step 2: Configure & Decensor
+Fill in the form fields on Cell 2 and click **Play (▶️)**:
+* **`MODEL_NAME`**: Paste any Hugging Face model path (e.g., `Qwen/Qwen2.5-7B-Instruct`).
+* **`QUANTIZATION`**: Keep as `BNB_4BIT` for free Colab VRAM, or set to `NONE` if you have Colab Pro.
+* **`HUGGINGFACE_TOKEN`**: *(Optional)* Paste your token if using gated models like `meta-llama/Llama-3.1-8B-Instruct`.
+
+### 5️⃣ Run Step 3: Zip Output Files
+Click **Play (▶️)** on Cell 3. It smart-scans your workspace, finds your newly decensored model weights, and packs them into a `.zip` archive.
+
+### 6️⃣ Run Step 4: Download Model
+Click **Play (▶️)** on Cell 4. This triggers an automatic browser download straight to your computer! 📦⬇️
+
+---
+
+## ✨ Key Features
+
+* 🎛️ **Zero-Code Form GUI:** No messing around with raw terminal commands.
+* 🛡️ **Anti-OOM Safeguards:** Optimized 4-bit quantization modes prevent out-of-memory errors on free GPUs.
+* 📂 **No-Drama Auto Zipping:** Automatically locates output files no matter where Heretic saves them.
+* ⚡ **1-Click Automation:** Full support for running the entire notebook sequentially in one shot!
+
+---
+
+## 📜 Credits & Acknowledgments
+
+* Engine powered by [p-e-w/heretic](https://github.com/p-e-w/heretic).
+* Workflow inspired by Plinius's OBLITERATUS notebook series.
