@@ -64,6 +64,8 @@ You never need to leave your computer running all night. Whenever you're ready t
 1. Re-open Google Colab anytime later.
 2. Paste the **exact same model name** you were working on.
 3. Hit **Play (▶️)**!
+4. Use same google drive account where heretic_checkpoints saved.
+5. Wait till it finishes.
 
 The script automatically mounts your Google Drive, detects your saved checkpoint, skips all finished trials, and instantly picks up right where you left off! 🔄💾
 
