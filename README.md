@@ -74,7 +74,7 @@ You never need to leave your computer running all night. Whenever you're ready t
 
 The script automatically mounts your Google Drive, detects your saved checkpoint, skips all finished trials, and instantly picks up right where you left off! 🔄💾
 
-**You need to select either you want to Continue the previous run or start from scratch.**
+**You need to select either you want to Continue the previous run or start from scratch. Type 1 and hit enter**
 
 ## 🔄 Resuming Progress After GPU Timeout (Free Tier)
 
@@ -103,7 +103,7 @@ Don't want to wait 24 hours? Jump to another Gmail account and keep going immedi
    * Set runtime to **GPU** and run **Cell 1**.
    * `heretic` will read the shared checkpoint folder and seamlessly continue from the last saved trial! 🎉
 
-**You need to select either you want to Continue the previous run or start from scratch.**
+**You need to select either you want to Continue the previous run or start from scratch. Type 1 and hit enter**
 
 ---
 
