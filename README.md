@@ -4,7 +4,7 @@
 
 Created using Colab and Heretic tool for AI model abliterating.  
 
-# 🗡️ Heretic Colab Decensor: Uncensor LLMs in 1 Click 🔥
+# 🗡️ Heretic Colab Decensor: Uncensor LLMs easily 🔥
 
 Transform restricted, refusal-heavy AI models into completely open, unfiltered powerhouses right inside Google Colab — no expensive local hardware required! 🚀
 
