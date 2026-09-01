@@ -49,12 +49,24 @@ This checks your GPU availability and installs `heretic-llm` and its required to
 * **`GOOGLE DRIVE AUTHORIZATION`**: When prompted by the pop-up window, click "Connect to Google Drive -> select google account -> select all permission". This allows the script to create a tiny checkpoint folder (~10-50 MB) to save your trial progress in real-time! 💾
 
 ### 4️⃣ Step 2: Zip Output Files
-Click **Play (▶️)** on Cell 2. It smart-scans your workspace, finds your newly decensored model weights, and packs them into a `.zip` archive.
+Click **Play (▶️)** on Cell 2. It smart-scans your workspace, finds your newly decensored model weights, and packs them into a `.zip` archive. I don't prefer to zip folder. You may need to be extra careful about path while zipping. 
 
 ### 5️⃣ Step 3: Download Model
-Click **Play (▶️)** on Cell 3. This triggers an automatic browser download straight to your computer! 📦⬇️
+Click **Play (▶️)** on Cell 3. This triggers an automatic browser download straight to your computer! You may need to be extra careful while downloading. It will be best to manually download. But for large file, just copy path of that large file and paste in zip_file -> path. then click start. It will download large file if you face errors/abort message while manually downloading .📦⬇️ 
 
 ### Yes, it will take a long time to finish. Don't worry, keep that tab open. And take a movie break.
+
+---
+
+💡 **Always download tokenizer_config.json from hugging face base model. Because Heretic will give you broken tokenizer_config.json!**
+
+💡 **Download llama.cpp and Install it. After installing llama.cpp properly use this command below to generate GGUF file to run AI model in LMstudio or Ollama**
+
+💡 **python convert_hf_to_gguf.py "/path/to/dir/[Folder Name Where All Files Saved]" --outfile /path/to/dir/[AI Model Name] --outtype auto**
+
+or,
+
+💡 **./venv/bin/python convert_hf_to_gguf.py "/path/to/dir/[Folder Name Where All Files Saved]" --outfile /path/to/dir/[AI Model Name] --outtype auto**
 
 ---
 
@@ -113,6 +125,25 @@ Don't want to wait 24 hours? Jump to another Gmail account and keep going immedi
 * 🛡️ **Anti-OOM Safeguards:** Optimized 4-bit quantization modes prevent out-of-memory errors on free GPUs.
 * 📂 **No-Drama Auto Zipping:** Automatically locates output files no matter where Heretic saves them.
 * ⚡ **1-Click Automation:** Full support for running the entire notebook sequentially in one shot!
+
+---
+
+🎯 Heretic Export Cheat Sheet
+* When trials finish, enter these inputs in sequence:
+
+* Select Best Trial: 1 (Lowest refusal score)
+
+* Export Action: 1 (Save to local folder)
+
+* Output Path: /content/output
+
+* Merge Method: 1 (Merge LoRA & export full model)
+
+* ⏳ Wait for Writing model shards: 100% to complete!
+
+* Back to Menu: 5
+
+* Exit Program: 14 / 10 (or the number for Exit)
 
 ---
 
