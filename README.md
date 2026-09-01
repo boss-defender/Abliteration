@@ -34,7 +34,7 @@ Go to **Runtime** ➡️ **Change runtime type** ➡️ Select **T4 GPU** ➡️
 ### ⚡PRO TIP / RUN-ALL NOTE:
 You can simply click **Runtime ➡️ Run all** (`Ctrl + F9` / `Cmd + F9`) to run the whole pipeline automatically! Just make sure you set your correct **Hugging Face Model Path** (`MODEL_NAME e.g., Qwen/Qwen2.5-7B-Instruct`), **Quantization** (`BNB_4BIT`), and **Access Token** (only if using a gated model) in Cell 1 **BEFORE** hitting Run All! 🎯.
 
-**Note: A Google Drive permission pop-up will appear when Cell 1 runs—simply click "Connect to Google Drive , select google account , give all permission" to enable automatic checkpoint saving! 📁**
+**Note: A Google Drive permission pop-up will appear when Cell 1 runs—simply click "Connect to Google Drive -> select google account -> give all permission" to enable automatic checkpoint saving! 📁**
 
 ### 3️⃣ Step 1: Configure , Install Engine & Decensor
 
@@ -44,7 +44,7 @@ This checks your GPU availability and installs `heretic-llm` and its required to
 * **`MODEL_NAME`**: Paste any Hugging Face model path (e.g., `Qwen/Qwen2.5-7B-Instruct`).
 * **`QUANTIZATION`**: Keep as `BNB_4BIT` for free Colab VRAM, or set to `NONE` if you have Colab Pro.
 * **`HUGGINGFACE_TOKEN`**: *(Optional)* Paste your token if using gated models like `meta-llama/Llama-3.1-8B-Instruct`.
-* **`GOOGLE DRIVE AUTHORIZATION`**: When prompted by the pop-up window, click "Connect to Google Drive , select google account , give all permission". This allows the script to create a tiny checkpoint folder (~10-50 MB) to save your trial progress in real-time! 💾
+* **`GOOGLE DRIVE AUTHORIZATION`**: When prompted by the pop-up window, click "Connect to Google Drive -> select google account -> give all permission". This allows the script to create a tiny checkpoint folder (~10-50 MB) to save your trial progress in real-time! 💾
 
 ### 4️⃣ Step 2: Zip Output Files
 Click **Play (▶️)** on Cell 2. It smart-scans your workspace, finds your newly decensored model weights, and packs them into a `.zip` archive.
