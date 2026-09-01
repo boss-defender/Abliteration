@@ -54,6 +54,22 @@ Click **Play (▶️)** on Cell 4. This triggers an automatic browser download s
 
 ---
 
+## 🛡️ Crash-Proof Auto-Resume (Disconnect Without Fear!)
+
+💡 **ACCIDENTAL MISTAKE OR GOING TO BED? NO PROBLEM!** 🔌😴⚡
+
+Whether life happens by accident (sudden power outage, accidental tab close, browser crash) OR you intentionally shut down your PC to catch some sleep 🛌—**your progress is 100% safe!**
+
+You never need to leave your computer running all night. Whenever you're ready to continue:
+
+1. Re-open Google Colab anytime later.
+2. Paste the **exact same model name** you were working on.
+3. Hit **Play (▶️)**!
+
+The script automatically mounts your Google Drive, detects your saved checkpoint, skips all finished trials, and instantly picks up right where you left off! 🔄💾
+
+---
+
 ## ✨ Key Features
 
 * 🎛️ **Zero-Code Form GUI:** No messing around with raw terminal commands.
