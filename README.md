@@ -34,21 +34,20 @@ Go to **Runtime** ➡️ **Change runtime type** ➡️ Select **T4 GPU** ➡️
 ### ⚡PRO TIP / RUN-ALL NOTE:
 You can simply click **Runtime ➡️ Run all** (`Ctrl + F9` / `Cmd + F9`) to run the whole pipeline automatically! Just make sure you set your correct **Hugging Face Model Path** (`MODEL_NAME e.g., Qwen/Qwen2.5-7B-Instruct`), **Quantization** (`BNB_4BIT`), and **Access Token** (only if using a gated model) in Cell 1 **BEFORE** hitting Run All! 🎯
 
-### 3️⃣ Run Step 1: Configure , Install Engine & Decensor
+### 3️⃣ Step 1: Configure , Install Engine & Decensor
 
-Click **Play (▶️)** on Cell 1. 
-This checks your GPU availability and installs `heretic-llm` and its required tools.
-Fill in the form fields on Cell 2 and click **Play (▶️)**:
+Fill in the form fields on Cell 1 and click **Play (▶️)**
+This checks your GPU availability and installs `heretic-llm` and its required tools and starts decensoring. 
 
 * **`MODEL_NAME`**: Paste any Hugging Face model path (e.g., `Qwen/Qwen2.5-7B-Instruct`).
 * **`QUANTIZATION`**: Keep as `BNB_4BIT` for free Colab VRAM, or set to `NONE` if you have Colab Pro.
 * **`HUGGINGFACE_TOKEN`**: *(Optional)* Paste your token if using gated models like `meta-llama/Llama-3.1-8B-Instruct`.
 
-### 4️⃣ Run Step 3: Zip Output Files
-Click **Play (▶️)** on Cell 3. It smart-scans your workspace, finds your newly decensored model weights, and packs them into a `.zip` archive.
+### 4️⃣ Step 2: Zip Output Files
+Click **Play (▶️)** on Cell 2. It smart-scans your workspace, finds your newly decensored model weights, and packs them into a `.zip` archive.
 
-### 5️⃣ Run Step 4: Download Model
-Click **Play (▶️)** on Cell 4. This triggers an automatic browser download straight to your computer! 📦⬇️
+### 5️⃣ Step 3: Download Model
+Click **Play (▶️)** on Cell 3. This triggers an automatic browser download straight to your computer! 📦⬇️
 
 ### Yes, it will take a long time to finish. Don't worry, keep that tab open. And take a movie break.
 
