@@ -105,7 +105,7 @@ or,
 
 or,
 
-🎯 **./venv/bin/python convert_hf_to_gguf.py "/path/to/dir/[Folder Name Where All Files Saved]" --outfile "/path/to/dir/[Temp Name].gguf" --outtype f16 && ./llama-quantize "/path/to/dir/[Temp Name].gguf" "/path/to/dir/[Final Name].gguf" Q4_K_M && rm "/path/to/dir/[Temp Name].gguf"**
+🎯 **./venv/bin/python convert_hf_to_gguf.py "/path/to/dir/[Folder Name Where All Files Saved]" --outfile "/path/to/dir/[Temp Name].gguf" --outtype f16 && ./build/bin/llama-quantize "/path/to/dir/[Temp Name].gguf" "/path/to/dir/[Final Name].gguf" Q4_K_M && rm "/path/to/dir/[Temp Name].gguf"**
 
 ---
 
