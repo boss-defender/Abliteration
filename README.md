@@ -34,7 +34,7 @@ Click here to **[Open in Colab](https://colab.research.google.com/github/boss-de
 Go to **Runtime** ➡️ **Change runtime type** ➡️ Select **T4 GPU** ➡️ Click **Save**.
 
 ### ⚡PRO TIP / RUN-ALL NOTE:
-You can simply click **Runtime ➡️ Run all** (`Ctrl + F9` / `Cmd + F9`) to run the whole pipeline automatically! Just make sure you set your correct **Hugging Face Model Path** (`MODEL_NAME e.g., Qwen/Qwen2.5-7B-Instruct`), **Quantization** (`BNB_4BIT`), and **Access Token** (only if using a gated model) in Cell 1 **BEFORE** hitting Run All! 🎯.
+You can simply click **Runtime ➡️ Run all** (`Ctrl + F9` / `Cmd + F9`) to run the whole pipeline automatically! Just make sure you set your correct **Hugging Face Model Path** (`MODEL_NAME e.g., Qwen/Qwen2.5-7B-Instruct`), **Quantization** (`BNB_4BIT`), and **Access Token** (only if using a gated model) in Cell 1 & **Correct File Path** in Cell 2 & 3 **BEFORE** hitting Run All! 🎯.
 
 **Note: A Google Drive permission pop-up will appear when Cell 1 runs—simply click "Connect to Google Drive -> select google account -> select all permission" to enable automatic checkpoint saving! 📁**
 
