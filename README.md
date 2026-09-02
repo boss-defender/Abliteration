@@ -54,8 +54,7 @@ Click **Play (▶️)** on Cell 2. It smart-scans your workspace, finds your new
 ### 5️⃣ Step 3: Download Model
 Click **Play (▶️)** on Cell 3. This triggers an automatic browser download straight to your computer! You may need to be extra careful while downloading. It will be best to manually download. But for large file, just copy path of that large file and paste in zip_file -> path. then click start. It will download large file if you face errors/abort message while manually downloading .📦⬇️ 
 
-### Yes, it will take a long time to finish. Don't worry, keep that tab open. And take a movie break.
-
+###⏳ Yes, it will take a long time to finish. Don't worry, keep that tab open. And take a movie break.
 ---
 
 **💫 Heretic Export Cheat Sheet**
@@ -101,7 +100,7 @@ or,
 
 ---
 
-**If you want Q4_K_M or anyother format**
+**👇 If you want Q4_K_M or anyother format**
 ---
 
 🎯 **python convert_hf_to_gguf.py "/path/to/dir/[Folder Name Where All Files Saved]" --outfile "/path/to/dir/[Temp Name].gguf" --outtype f16 && ./llama-quantize "/path/to/dir/[Temp Name].gguf" "/path/to/dir/[Final Name].gguf" Q4_K_M && rm "/path/to/dir/[Temp Name].gguf"**
