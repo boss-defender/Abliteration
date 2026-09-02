@@ -66,7 +66,7 @@ Click **Play (▶️)** on Cell 3. This triggers an automatic browser download s
 
 * Export Action: 1 (Save to local folder)
 
-* Output Path: /content/output
+* Output Path: /content/uncensoredai
 
 * Merge Method: 1 (Merge LoRA & export full model)
 
