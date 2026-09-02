@@ -82,7 +82,9 @@ Click **Play (▶️)** on Cell 3. This triggers an automatic browser download s
 # **🧠 Caution !**
 
 
-💡 **Always download tokenizer_config.json from hugging face base model. Because Heretic will give you broken tokenizer_config.json!**
+💡 **Always download tokenizer_config.json from hugging face base model.**
+
+🚩 **Because Heretic will give you Broken tokenizer_config.json ! 🚨** 
 
 💡 **Download llama.cpp and Install it. After installing llama.cpp properly use this command below to generate GGUF file to run AI model in LMstudio or Ollama**
 
