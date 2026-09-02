@@ -58,13 +58,36 @@ Click **Play (▶️)** on Cell 3. This triggers an automatic browser download s
 
 ---
 
-## ⚠️ Caution ! 
+**💫 Heretic Export Cheat Sheet**
+
+* When trials finish, enter these inputs in sequence:
+
+* Select Best Trial: 1 (Lowest refusal score)
+
+* Export Action: 1 (Save to local folder)
+
+* Output Path: /content/output
+
+* Merge Method: 1 (Merge LoRA & export full model)
+
+* ⏳ Wait for Writing model shards: 100% to complete!
+
+* Back to Menu: 5
+
+* Exit Program: 14 / 10 (or the number for Exit)
+
+
+---
+
+# **🧠 Caution !**
+
 
 💡 **Always download tokenizer_config.json from hugging face base model. Because Heretic will give you broken tokenizer_config.json!**
 
 💡 **Download llama.cpp and Install it. After installing llama.cpp properly use this command below to generate GGUF file to run AI model in LMstudio or Ollama**
 
 ---
+
 **🪄 Single Line Command Prompt**
 ---
 
@@ -81,8 +104,6 @@ or,
 or,
 
 🎯 **./venv/bin/python convert_hf_to_gguf.py "/path/to/dir/[Folder Name Where All Files Saved]" --outfile "/path/to/dir/[Temp Name].gguf" --outtype f16 && ./llama-quantize "/path/to/dir/[Temp Name].gguf" "/path/to/dir/[Final Name].gguf" Q4_K_M && rm "/path/to/dir/[Temp Name].gguf"**
-
----
 
 ---
 
@@ -141,25 +162,6 @@ Don't want to wait 24 hours? Jump to another Gmail account and keep going immedi
 * 🛡️ **Anti-OOM Safeguards:** Optimized 4-bit quantization modes prevent out-of-memory errors on free GPUs.
 * 📂 **No-Drama Auto Zipping:** Automatically locates output files no matter where Heretic saves them.
 * ⚡ **1-Click Automation:** Full support for running the entire notebook sequentially in one shot!
-
----
-
-🎯 Heretic Export Cheat Sheet
-* When trials finish, enter these inputs in sequence:
-
-* Select Best Trial: 1 (Lowest refusal score)
-
-* Export Action: 1 (Save to local folder)
-
-* Output Path: /content/output
-
-* Merge Method: 1 (Merge LoRA & export full model)
-
-* ⏳ Wait for Writing model shards: 100% to complete!
-
-* Back to Menu: 5
-
-* Exit Program: 14 / 10 (or the number for Exit)
 
 ---
 
