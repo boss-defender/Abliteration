@@ -97,11 +97,14 @@ Click **Play (▶️)** on Cell 3. This triggers an automatic browser download s
 
 or,
 
-🎯 **python convert_hf_to_gguf.py "/path/to/dir/[Folder Name Where All Files Saved]" --outfile "/path/to/dir/[Temp Name].gguf" --outtype f16 && ./llama-quantize "/path/to/dir/[Temp Name].gguf" "/path/to/dir/[Final Name].gguf" Q4_K_M && rm "/path/to/dir/[Temp Name].gguf"**
-
-or,
-
 🎯 **./venv/bin/python convert_hf_to_gguf.py "/path/to/dir/[Folder Name Where All Files Saved]" --outfile "/path/to/dir/[AI Model Name].gguf" --outtype auto**
+
+---
+
+**If you want Q4_K_M or anyother format**
+---
+
+🎯 **python convert_hf_to_gguf.py "/path/to/dir/[Folder Name Where All Files Saved]" --outfile "/path/to/dir/[Temp Name].gguf" --outtype f16 && ./llama-quantize "/path/to/dir/[Temp Name].gguf" "/path/to/dir/[Final Name].gguf" Q4_K_M && rm "/path/to/dir/[Temp Name].gguf"**
 
 or,
 
